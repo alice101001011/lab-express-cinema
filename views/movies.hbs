@@ -1,0 +1,14 @@
+
+<div class="movies-body">
+<div class="card-grid">
+  {{#each movies}}
+    <div class="card">
+      <img src={{this.image}} class="card-img-top" alt={{this.title}} />
+      <div class="card-body">
+        <h5 class="card-title">{{this.title}}</h5>
+        <a href="/movies/{{this._id}}" class="btn btn-sm btn-outline-light">About the movie</a>
+      </div>
+    </div>
+  {{/each}}
+</div>
+</div>

@@ -1,8 +1,121 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+html {
+  background-color: black;
 }
 
-a {
-  color: #00B7FF;
+body {
+  margin: 0;
+  font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.navbar {
+  height: 6rem;
+  background-color: none;
+  font-size: 2rem;
+}
+
+.navbar-nav.navbar-center {
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+  align-items: baseline;
+}
+
+.logo {
+  font-size: 2.4rem;
+  color: rgb(187, 40, 109);
+}
+
+.index-body {
+  margin-top: -6rem;
+  background: url(/images/cinema.jpg) no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  overflow-y: hidden;
+  color: white;
+}
+
+.intro {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: flex-start;
+}
+
+.movies-body,
+.infos-body {
+  margin-top: -6rem;
+  padding-top: 6rem;
+  background-color: black;
+  height: 100vh;
+}
+
+.header {
+  margin-top: 8rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 8rem;
+  font-weight: 600;
+  color: white;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+.card-grid {
+  padding: 8rem 6rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: auto;
+  column-gap: 30px;
+  row-gap: 30px;
+}
+
+.card {
+  border: none;
+  background-color: black;
+}
+
+.card-body {
+  padding: 2rem;
+  color: white;
+}
+
+.card-img-top {
+  height: 400px;
+  width: auto;
+  object-fit: cover;
+}
+
+.card-title {
+  color: rgb(187, 40, 109);
+  font-size: xx-large;
+}
+
+.card-text {
+  font-weight: 200;
+  color: white;
+}
+
+.btn-primary {
+  background-color: #1ed760;
+  border: none;
+  border-radius: 500px;
+  font-size: smaller;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.btn-primary:hover {
+  background-color: #1bb651;
+  border: none;
+  border-radius: 500px;
+  font-size: smaller;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
